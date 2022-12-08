@@ -75,7 +75,10 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   min-height: calc(100vh - 116px);
-  gap: 20px;
+  gap: 62px;
+}
+.main .wrapper > img {
+  width: 100%;
 }
 .main .wrapper .main-content {
   margin-right: 163px;
@@ -195,6 +198,9 @@ body {
     justify-items: center;
     padding: 24px 0px;
   }
+  .main .wrapper > img {
+    padding: 0px 80px;
+  }
   .main .wrapper .main-content {
     margin-right: 0px;
   }
@@ -222,6 +228,9 @@ body {
   }
 }
 @media (max-width: 576px) {
+  .main .wrapper {
+    gap: 16px;
+  }
   .main .wrapper > img {
     padding: 0px 50px;
   }

@@ -25,7 +25,10 @@ body {
         grid-template-columns: 1fr 1fr;
         align-items: center;
         min-height: calc(100vh - 116px);
-        gap: 20px;
+        gap: 62px;
+        >img{
+            width: 100%;
+        }
         .main-content {
             margin-right: 163px;
             >p {
@@ -147,6 +150,9 @@ body {
             grid-template-columns: 1fr;
             justify-items: center;
             padding: 24px 0px;
+            >img{
+                padding: 0px 80px;
+            }
             .main-content {
                 margin-right: 0px;
             }
@@ -193,6 +199,7 @@ body {
 @media(max-width: 576px) {
     .main {
         .wrapper {
+            gap: 16px;
             >img{
                 padding: 0px 50px;
             }
