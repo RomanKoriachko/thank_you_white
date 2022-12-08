@@ -41,22 +41,28 @@ body {
             .main-text {
                 @include fonts.t6();
             }
-            button {
-                width: 184px;
-                height: 48px;
-                background: linear-gradient(203.2deg, #37AEE2 21.67%, #1E96C8 70%);
-                border-radius: 8px;
-                border: none;
-                @include fonts.b1();
-                cursor: pointer;
-                color: #ffffff;
-                transition: .3s all;
-                .telegram-btn-content {
-                    justify-content: center;
-                    gap: 10px;
+            .buttons-wrapper {
+                button {
+                    width: 184px;
+                    height: 48px;
+                    background: linear-gradient(203.2deg, #37AEE2 21.67%, #1E96C8 70%);
+                    border-radius: 8px;
+                    border: none;
+                    @include fonts.b1();
+                    cursor: pointer;
+                    color: #ffffff;
+                    transition: .3s all;
+                    .btn-content {
+                        justify-content: center;
+                        gap: 10px;
+                    }
+                    &:hover {
+                        transform: translateY(10%);
+                    }
                 }
-                &:hover {
-                    transform: translateY(10%);
+                .viber-btn {
+                    background: #7360F2;
+                    margin-left: 20px;
                 }
             }
         }
@@ -155,6 +161,14 @@ body {
             }
             .main-content {
                 margin-right: 0px;
+                .buttons-wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    .viber-btn {
+                        margin-left: 0px;
+                    }
+                }
             }
         }
     }
@@ -218,8 +232,10 @@ body {
                 .main-text {
                     @include fonts.mobileT6();
                 }
-                button {
-                    width: 100%;
+                .buttons-wrapper{
+                    button{
+                        width: 100%;
+                    }
                 }
             }
         }
