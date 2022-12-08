@@ -120,6 +120,10 @@ body {
 .main .wrapper .main-content .buttons-wrapper button:hover {
   transform: translateY(10%);
 }
+.main .wrapper .main-content .buttons-wrapper button > a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .main .wrapper .main-content .buttons-wrapper .viber-btn {
   background: #7360F2;
   margin-left: 20px;
